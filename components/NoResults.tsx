@@ -1,5 +1,5 @@
 import React from "react";
-import { MdOutlineVideocamOff } from "react-icons/md";
+import { MdOutlineVideocamOff, MdAccountBox } from "react-icons/md";
 import { BiCommentX } from "react-icons/bi";
 
 interface IProps {
@@ -12,6 +12,8 @@ const NoResults = ({ text }: IProps) => {
       <p className="text-8xl">
         {text === "No comments yet!" ? (
           <BiCommentX />
+        ) : text.includes("No account results") ? (
+          <MdAccountBox />
         ) : (
           <MdOutlineVideocamOff />
         )}
