@@ -38,15 +38,16 @@ const VideoCard: NextPage<IProps> = ({ post }) => {
     <div className="flex flex-col border-b-2 border-gray-200 pb-6">
       <div>
         <div className="flex gap-3 p-2 cursor-pointer font-semibold rounded">
-          <div className="md:w-16 md:h-16 w-10 h-10">
+          <div className="w-10 h-10">
             <Link href={`/profile/${post.postedBy._id}`}>
               <>
-                <img
-                  width={62}
-                  height={62}
-                  className="rounded-full md:w-16 md:h-16 w-10 h-10"
+                <Image
+                  width={40}
+                  height={40}
+                  className="rounded-full"
                   src={post.postedBy.image}
                   alt="profile photo"
+                  layout="fixed"
                 />
               </>
             </Link>
