@@ -81,7 +81,7 @@ const Comments = ({
       </div>
 
       {userProfile && (
-        <div className="absolute bottom-0 left-0 pb-6 px-2 md:px-10 w-full bg-[#f8f8f8]">
+        <div className="absolute bottom-0 left-0 pb-6 px-2 md:px-10 w-full bg-[#f8f8f8] pt-2">
           <form onSubmit={addComment} className="flex gap-4">
             <input
               value={comment}
