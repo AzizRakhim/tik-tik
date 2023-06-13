@@ -79,11 +79,14 @@ const VideoCard: NextPage<IProps> = ({ post }) => {
         >
           <Link href={`/detail/${post._id}`}>
             <video
-              src={post.video.asset.url}
               loop
               ref={videoRef}
               className="lg:w-[600px] h-[300px] md:h-[400px] lg:h-[530px] w-[200px] rounded-2xl cursor-pointer bg-gray-100"
-            ></video>
+            >
+              <source src={post.video.asset.url} type="video/mp4" />
+              <source src={post.video.asset.url} type="video/webm" />
+              <source src={post.video.asset.url} type="video/ogg" />
+            </video>
           </Link>
           {isHover && (
             <div className="absolute bottom-6 cursor-pointer left-8 md:left-14 lg:left-0 flex gap-10 lg:justify-between w-[100px] md:w-[50px] p-3">

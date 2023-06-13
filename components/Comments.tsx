@@ -36,7 +36,7 @@ const Comments = ({
 
   return (
     <div className="border-t-2 border-gray-200 pt-4 px-10 bg-[#f8f8f8] border-b-2 lg:pb-0 pb-[100px]">
-      <div className="overflow-scroll lg:h-[475px]">
+      <div className="overflow-scroll lg:h-[475px] pb-[83px]">
         {comments?.length ? (
           comments.map((item, idx) => (
             <>
@@ -81,7 +81,7 @@ const Comments = ({
       </div>
 
       {userProfile && (
-        <div className="absolute bottom-0 left-0 pb-6 px-2 md:px-10 w-full">
+        <div className="absolute bottom-0 left-0 pb-6 px-2 md:px-10 w-full bg-[#f8f8f8]">
           <form onSubmit={addComment} className="flex gap-4">
             <input
               value={comment}
