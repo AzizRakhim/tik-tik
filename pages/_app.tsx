@@ -24,12 +24,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       <div className="xl:w-[1200px] m-auto overflow-hidden h-[100vh]">
         <Head>
           <title>Tik Tik</title>
-          <meta property="og:image" content="https://i.imgur.com/xnX65IH.png" />
-          <meta
-            property="og:image:secure_url"
-            content="https://i.imgur.com/xnX65IH.png"
-          />
-          <meta property="og:image:alt" content="Tik Tik" />
+          <link rel="icon" href="/icon.png" />
         </Head>
 
         <Navbar />
