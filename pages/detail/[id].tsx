@@ -127,7 +127,7 @@ const Detail = ({ postDetails }: IProps) => {
           <div className="flex gap-3 p-2 cursor-pointer font-semibold rounded">
             <div className="md:w-20 md:h-20 w-16 h-16 ml-4">
               <Link href={`/profile/${post.postedBy._id}`}>
-                <>
+                <div>
                   <Image
                     width={62}
                     height={62}
@@ -136,7 +136,7 @@ const Detail = ({ postDetails }: IProps) => {
                     alt="profile photo"
                     layout="responsive"
                   />
-                </>
+                </div>
               </Link>
             </div>
             <div>

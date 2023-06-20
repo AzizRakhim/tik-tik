@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import { NextPage } from "next";
-import { useRouter } from "next/router";
+import { useState } from "react";
 import Link from "next/link";
 import { AiFillHome, AiOutlineMenu } from "react-icons/ai";
 import { ImCancelCircle } from "react-icons/im";
@@ -13,8 +11,6 @@ const Sidebar = () => {
 
   const normalLink =
     "flex items-center gap-3 hover:bg-primary p-3 justify-center xl:justify-start cursor-pointer font-semibold text-[#f51997] rounded";
-
-  const userProfile = false;
 
   return (
     <div>

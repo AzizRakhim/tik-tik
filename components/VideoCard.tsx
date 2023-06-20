@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { HiVolumeUp, HiVolumeOff } from "react-icons/hi";
-import { BsFillPlayFill, BsFillPauseFill, BsPlay } from "react-icons/bs";
+import { BsFillPlayFill, BsFillPauseFill } from "react-icons/bs";
 import { GoVerified } from "react-icons/go";
 
 import { Video } from "../types";
@@ -40,7 +40,7 @@ const VideoCard: NextPage<IProps> = ({ post }) => {
         <div className="flex gap-3 p-2 cursor-pointer font-semibold rounded">
           <div className="w-10 h-10">
             <Link href={`/profile/${post.postedBy._id}`}>
-              <>
+              <div>
                 <Image
                   width={40}
                   height={40}
@@ -49,7 +49,7 @@ const VideoCard: NextPage<IProps> = ({ post }) => {
                   alt="profile photo"
                   layout="fixed"
                 />
-              </>
+              </div>
             </Link>
           </div>
           <div>

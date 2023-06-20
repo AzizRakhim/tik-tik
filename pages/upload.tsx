@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useRouter } from "next/router";
 import { FaCloudUploadAlt } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
@@ -83,8 +83,8 @@ const Upload = () => {
   };
 
   return (
-    <div className="flex w-full h-full absolute left-0 max-[800px]:top-[60px] top-[70px] mb-10 pt-10 lg:pt-20 bg-[#f8f8f8] justify-center">
-      <div className="bg-white rounded-lg xl:h-[80vh] flex gap-6 flex-wrap justify-center items-center p-14 pt-6 max-[644px]:w-full">
+    <div className="flex w-full !h-full absolute left-0 top-[70px] max-[800px]:top-[60px] mb-10 pt-10 lg:pt-20 bg-[#f8f8f8] justify-center pb-10 overflow-auto">
+      <div className="bg-white rounded-lg h-[690px] flex gap-6 flex-wrap justify-center items-center p-14 pt-6 max-[644px]:w-full">
         <div>
           <div>
             <p className="text-2xl font-bold">Upload Video</p>
@@ -113,7 +113,7 @@ const Upload = () => {
                       </p>
                       <button
                         type="button"
-                        className=" rounded-full bg-gray-200 text-red-400 p-2 text-xl cursor-pointer outline-none hover:shadow-md transition-all duration-500 ease-in-out"
+                        className="rounded-full bg-gray-200 text-red-400 p-2 text-xl cursor-pointer outline-none hover:shadow-md transition-all duration-500 ease-in-out"
                         onClick={() => setVideoAsset(undefined)}
                       >
                         <MdDelete />
@@ -156,7 +156,7 @@ const Upload = () => {
             )}
           </div>
         </div>
-        <div className="flex flex-col gap-3 pb-10 max-[644px]:mt-20">
+        <div className="flex flex-col gap-3 pb-10 max-[1046px]:mt-40 max-[1024px]:mt-0 max-[644px]:mt-40">
           <label className="text-md font-medium">Caption</label>
           <input
             type="text"

@@ -23,13 +23,13 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     >
       <div className="xl:w-[1200px] m-auto overflow-hidden h-[100vh]">
         <Head>
-          <title>Tik Tik</title>
+          <title>Tik Tik - Aziz Rakhim</title>
           <link rel="icon" href="/icon.png" />
         </Head>
 
         <Navbar />
         <div className="flex gap-6 md:gap-20">
-          <div className="h-[92vh] overflow-hidden hover:overflow-y-auto">
+          <div className="h-[92vh] overflow-y-auto">
             <Sidebar />
           </div>
           <div className="mt-4 flex flex-col gap-10 overflow-auto h-[88vh] videos flex-1">
